@@ -68,6 +68,29 @@ function showPatients(hospital) {
     }
 };
 
+// Part 3
+
+
+function getPatient(patients) {
+
+    if (patients.length === 0) return null;
+
+    let randomID = Math.floor(Math.random() * patients.length);
+
+    return patients[randomID].ID;
+
+}
+
+
+let randomPatientId = getPatient(hospital.patients);
+console.log(randomPatientId);
+
+
+
+showPatients(hospital);
+
+
+
 
 
 
