@@ -82,8 +82,8 @@ function getPatient(patients) {
 }
 
 
-let randomPatientId = getPatient(hospital.patients);
-console.log(randomPatientId);
+let randomPatientID = getPatient(hospital.patients);
+console.log(randomPatientID);
 
 
 
