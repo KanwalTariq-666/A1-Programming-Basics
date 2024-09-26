@@ -29,4 +29,46 @@ let hospital = {
 };
 
 
+// Part 2:
+
+
+function showPatients(hospital) {
+    let hospitalName = hospital.name;
+    let result = `<h1>${hospitalName}</h1>`;
+
+
+    console.log(result);
+
+
+    for (let i = 0; i < hospital.patients.length; i++) {
+        let patientName = hospital.patients[i].fullName;
+        let result2 = `<h2>${patientName},`;
+
+
+        let patientBirth = hospital.patients[i].dateOfBirth;
+        let result3 = `${patientBirth}</h2>`;
+        
+        console.log(result2 + result3);
+
+
+        let theUl = "<ul>";
+        console.log(theUl);
+
+
+        for (let j = 0; j < hospital.patients[i].symptoms.length; j++) {
+            let patientSymptom = hospital.patients[i].symptoms[j];
+            let result4 = `<li>${patientSymptom}</li>`;
+            console.log(result4);
+        }
+
+
+        let ulEnd = "</ul>";
+        console.log(ulEnd);
+
+    }
+};
+
+
+
+
 
