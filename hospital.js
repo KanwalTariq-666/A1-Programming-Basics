@@ -68,12 +68,12 @@ function showPatients(hospital) {
     }
 };
 
+showPatients(hospital);
+
 // Part 3
 
 
 function getPatient(patients) {
-
-    if (patients.length === 0) return null;
 
     let randomID = Math.floor(Math.random() * patients.length);
 
@@ -87,7 +87,6 @@ console.log(randomPatientID);
 
 
 
-showPatients(hospital);
 
 
 
